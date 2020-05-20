@@ -15,26 +15,35 @@
 	p{
 		border: 2px solid black;
 		width: 30%;
-		height: 100px;
+		height: 200px;
 		float: left;
 		margin-right: 15px;
-		margin-left: auto;
+		padding: 8.5px;
 	}
 
 	p.no1{
 		background-color: #564748;
 		margin-left: 10px;
+		font-family: cursive;
+		font-size: 17.1px;
 	}
 
 	p.no2{
 		background-color: #564748;
+		margin-left: 10px;
+		font-family: cursive;
+		font-size: 17.5px;
 	}
 
 	p.no3{
 		background-color: #564748;
 		float: right;
 		margin-right: 10px;
+		margin-left: 10px;
+		font-family: cursive;
+		font-size: 17.5px;
 	}
+
 
 
 /*	@media(min-width: 1200px){
@@ -122,20 +131,61 @@
 		}
 	}*/
 
+	.topright1{
+		position: absolute;
+		text-align: center;
+		height: 25px;
+		width: 109px;
+		border: 1px solid black;
+		top: 17px;
+		left: 24%;
+		font-size: 18px;
+		background-color: lightpink;
+	}
+
+	.topright2{
+		position: absolute;
+		text-align: center;
+		height: 25px;
+		width: 115px;
+		border: 1px solid black;
+		top: 17px;
+		left: 57%;
+		font-size: 18px;
+		background-color: red;
+	}
+
+	.topright3{
+		position: absolute;
+		text-align: center;
+		height: 25px;
+		width: 109px;
+		border: 1px solid black;
+		top: 17px;
+		right: -4.5px;
+		font-size: 18px;
+		background-color: yellow;
+	}
+
+
+	
 </style>
 <body>
 	<h1 align="center">Our Menu</h1>
 
-	<div class="row">
+	<section class="row">
 		<div class="col-lg-3 col-lg-6"></div>
 		<div class="col-lg-3 col-lg-6"></div>
 		<div class="col-lg-3 col-lg-6"></div>
-	</div>
+	</section>
 
 	<div>
-		<p class="no1"></p>
-		<p class="no2"></p>
-		<p class="no3"></p>
+		<p class="no1"><br><br>lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div class="topright1" style="font-size: 20px;"><b>Chicken</b></div>
+		<p class="no2"><br><br>lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div class="topright2" style="font-size: 20px;"><b>Beef</b></div>
+		<p class="no3"><br><br>lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div class="topright3" style="font-size: 20px;"><b>Sushi</b></div>
 	</div>
 </body>
 </html>
