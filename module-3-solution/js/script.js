@@ -1,0 +1,1 @@
+/*https://www.graphicsprings.com/filestorage/stencils/146cff6e061f3b3d77a23818faab16ab.svg*/
