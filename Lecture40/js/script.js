@@ -1,47 +1,57 @@
-// Function Constructor:
+
 /*
-function Circle(radius) {
-	this.radius = radius;
+document.addEventListener("DOMContentLoaded",function (event) {
+
+	function sayHello() {
+	document.querySelector("button").innerHTML = "Said it !";
+	var name = document.getElementById("name").value;
+	if(name === "student"){
+		var title = document.getElementById("title").innerHTML;
+		title = title + " & Lovin it !";
+		document.getElementById("title").innerHTML = title;
+	}
+	var message = "<h2>Hello " + name + "!</h2>";
+	console.log(message);
+
+	document.querySelector("#content").innerHTML = message;
 }
 
-Circle.prototype.getArea = function () {
-		return Math.PI * Math.pow(this.radius,2);
-	};
 
-var myCircle = new Circle(10);
-console.log(myCircle.getArea());
 
-var abc = new Circle(100);
-console.log(abc.getArea());
 
-var def = new Circle(1000);
-console.log(def.getArea());
+document.querySelector("button").addEventListener("click",sayHello);
+
+document.querySelector("body").addEventListener("mousemove",
+	function (event) {
+		if(event.shiftKey === true){
+			console.log(event.clientX);
+			console.log(event.clientY);
+		}
+
+		}
+	);
+
+
+
+	}
+);
+
 */
 
 
-// Object literals and 'this':
 
-var literalCircle = {
-	radius : 10,
+document.addEventListener("DOMContentLoaded",
+    function (event) {
+		document.querySelector("button").addEventListener("click", function() {
 
-	getArea: function () {
-		console.log(this);
-		return Math.PI * Math.pow(this.radius , 2);
-	}
-};
-
-console.log(literalCircle.getArea());
-
-
-
-
-
-
-
-
-
-
-
+			$ajaxUtils.sendGetRequest("/data/name.txt", function(request) {
+				var name = request.responseText;
+				document.querySelector('#content').innerHTML = "<h2>Hello " + name + "!";
+			});
+		});
+	
+    }
+);
 
 
 
